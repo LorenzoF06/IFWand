@@ -3,12 +3,12 @@ package io.github.aspwil.ifwand;
 import io.papermc.paper.event.player.PlayerItemFrameChangeEvent;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
-import org.bukkit.ChatColor;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.ItemFrame;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import static net.kyori.adventure.text.Component.*;
 
 public class PlayerWandEventListener implements Listener {
     private NamespacedKey isWandKey;
@@ -35,7 +35,7 @@ public class PlayerWandEventListener implements Listener {
                     frame.setInvulnerable(true);
                     frame.setFixed(true);
                     //send message to player
-                    player.sendMessage(Component.text("Item Frame Locked", NamedTextColor.RED));
+                    player.sendMessage(text("Item Frame Locked", NamedTextColor.RED));
                 }
             }
         }
