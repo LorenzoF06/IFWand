@@ -1,0 +1,12 @@
+name: IFWand
+version: '${project.version}'
+main: io.github.aspwil.ifwand.IFWand
+api-version: 1.19
+authors: [ aspwil ]
+description: Uses a wand to lock item frames
+website: aspwil.github.io
+commands:
+  ifwand:
+    description: Summon item frame wand
+    usage: /<command>
+    permission: IFWand.wand
