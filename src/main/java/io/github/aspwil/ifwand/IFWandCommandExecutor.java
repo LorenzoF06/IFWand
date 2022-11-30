@@ -1,6 +1,7 @@
 package io.github.aspwil.ifwand;
 
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -36,10 +37,10 @@ public class IFWandCommandExecutor implements CommandExecutor {
             //build wand
             ItemStack wand = new ItemStack(Material.BLAZE_ROD);
             ItemMeta meta = wand.getItemMeta();
-            meta.displayName(Component.text(ChatColor.DARK_AQUA+"Item Frame Wand"));
+            meta.displayName(Component.text("Item Frame Wand", NamedTextColor.DARK_AQUA));
             meta.lore(Arrays.asList(
-                    Component.text(ChatColor.DARK_RED+"[ITEM FRAME WAND]"),
-                    Component.text(ChatColor.DARK_RED+"Hit An Item Frame To lock it")
+                    Component.text("[ITEM FRAME WAND]", NamedTextColor.RED),
+                    Component.text("Hit An Item Frame To lock it", NamedTextColor.RED)
             ));
             meta.getPersistentDataContainer().set(isWandKey, PersistentDataType.INTEGER, 1);
             //update the wands item meta

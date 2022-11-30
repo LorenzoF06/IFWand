@@ -1,6 +1,8 @@
 package io.github.aspwil.ifwand;
 
 import io.papermc.paper.event.player.PlayerItemFrameChangeEvent;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.ChatColor;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.ItemFrame;
@@ -33,7 +35,7 @@ public class PlayerWandEventListener implements Listener {
                     frame.setInvulnerable(true);
                     frame.setFixed(true);
                     //send message to player
-                    player.sendMessage(ChatColor.RED + "Item Frame Locked");
+                    player.sendMessage(Component.text("Item Frame Locked", NamedTextColor.RED));
                 }
             }
         }
