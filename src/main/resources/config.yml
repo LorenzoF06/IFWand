@@ -1,0 +1,9 @@
+command:
+  wand: "ifwand"
+wand:
+  name: "§bItem Frame Wand"
+  lore: "§cUse on an Item Frame to lock or unlock it"
+messages:
+  itemFrameLocked: "Locked Item Frame"
+  itemFrameUnlocked: "Unlocked Item Frame"
+  noBlazeRod: "§cHold a single Blaze Rod to obtain the Item Frame Wand"

@@ -8,10 +8,12 @@ public final class IFWand extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        //register the listener to respond when someone hits an item frame
+        // Save the default config if it doesn't exist
+        saveDefaultConfig();
+        // Register the listener to respond when someone hits an Item Frame
         Bukkit.getPluginManager().registerEvents(new PlayerWandEventListener(this), this);
-        //set up the command to spawn a wand
-        getCommand("ifwand").setExecutor(new IFWandCommandExecutor(this));
+        // Set up the command to spawn an Item Frame Wand, otherwise "/ifwand" is used
+        getCommand(getConfig().getString("command.wand", "ifwand")).setExecutor(new IFWandCommandExecutor(this));
     }
 
     @Override

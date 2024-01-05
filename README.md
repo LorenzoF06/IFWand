@@ -1,15 +1,9 @@
 # IFWand
 
-This plugin is built for paper 1.19.2 servers, it may work on other versions but it is untested.
+This plugin is built for Paper 1.19.2 servers, it may work on other versions but it is untested.
 
-this plugin allows you to lock item frames so the items cant be removed, not rotated, using a wand.
+This plugin allows you to lock Item Frames so the items cant be removed, not rotated, using a wand. If the plugin is removed, the Locked Item Frames will stay locked,
 
-because this plugin only applies vanilla entity tags, even if the plugin is removed the item frames will stay locked
+You can get the wand by using the command /ifwand (requires the IFWand.wand permission) or the command which was set in the config.
 
-you can get the wand by using the command /ifwand (requires the IFWand.wand permission)
-
-in order to lock an item frame, hold the wand in your hand and hit the item frame
-
-if successful it should say "Item frame locked" in the chat
-
-in order to remove a locked item frame a creative mode player must destroy it.
+In order to lock an Item Frame, hold the wand in your hand and hit the Item Frame. If successful, it should say "Locked Item Frame" in the chat. Click again or destroy it in creative mode to unlock it.
